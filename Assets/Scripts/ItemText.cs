@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class ItemText : MonoBehaviour
@@ -10,6 +9,7 @@ public class ItemText : MonoBehaviour
 
     [HideInInspector] public string text;
     [HideInInspector] public int count;
+
     private void Start()
     {
         text = initialText;
@@ -37,16 +37,6 @@ public class ItemText : MonoBehaviour
         {
             UpdateText(count);
             count++;
+        }
     }
-
-    // void OnTriggerStay2D(Collider2D collisionInfo)
-    // {
-    //     if (collisionInfo.CompareTag("Player"))
-    //     {
-    //         if (Input.GetKeyDown("space"))
-    //         {
-    //             GameManager.Instance.PresentText(text, this.transform);
-    //              
-    //         }
-    //     }
-    // }
+}
