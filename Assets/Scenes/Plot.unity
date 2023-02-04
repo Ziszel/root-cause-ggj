@@ -257,6 +257,7 @@ RectTransform:
   m_Children:
   - {fileID: 1864044735}
   - {fileID: 2005119589}
+  - {fileID: 1203927359}
   m_Father: {fileID: 872446254}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -316,33 +317,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScentenceList:
-  - Hotel staff described you as having been in room 1209
-  - where Donald was on the night of the murder
-  - and we found your fingerprints at the crime scene
-  - We will now take you to the scene of Philips's murder to confirm the crime scene
-  - '?'
-  - Wasn't I supposed to be there 1206.
-  - I was an accomplice with the deceased Donald, Brix, and Donald's wife
-  - and we were paid by our employer to tidy up the crime scene for the person he
-    killed
-  - Donald was our boss and it was he who asked me to go to 1206 to clean up the
-    scene
-  - and create the illusion that the deceased had been killed with a blunt object
-  - so I smashed the deceased over the head with ice and threw the ice into the bathtub
-  - To create the illusion of a secret room murder
-  - I used a fishing line to jam the lock on the door to unlock it
-  - But why was the deceased Donald?
-  - It was 1206 that I should have gone to.
-  - Staff said that door numbers 1206 and 1209 had been switched.
-  - The deceased did have a blunt force trauma to the head and the room was unlocked
-  - when deceased Donald was found
+  - You killed an innocent man
+  - All the evidence points to you now
+  - You're going with us to the crime scene to confess
+  - 'Thought: No way, I''m a perfect killer'
+  - How could they be found
   listIndex: 0
   text: {fileID: 1864044736}
   scentencePanel: {fileID: 1146062035}
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 89582e21867e8a440afdf826170d1341, type: 3}
+  - {fileID: 21300000, guid: da05b1b8dc8f9164497a619f546a1cd4, type: 3}
   image: {fileID: 2005119590}
   SceneID: 1
-  max: 18
+  max: 5
+  image2: {fileID: 1203927360}
+--- !u!1 &1203927358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203927359}
+  - component: {fileID: 1203927361}
+  - component: {fileID: 1203927360}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1203927359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203927358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1146062036}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 716, y: 245.3}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1203927360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203927358}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 89582e21867e8a440afdf826170d1341, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1203927361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203927358}
+  m_CullTransparentMesh: 1
 --- !u!1 &1864044734
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donald was murdered
+  m_text: Hello Mr.Walter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -631,8 +696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 100}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -572.77, y: 245.3}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005119590
 MonoBehaviour:
@@ -654,7 +719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 89582e21867e8a440afdf826170d1341, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -731,7 +796,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
