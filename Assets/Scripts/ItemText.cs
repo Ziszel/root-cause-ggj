@@ -6,6 +6,7 @@ public class ItemText : MonoBehaviour
     [SerializeField] private string secondText;
     [SerializeField] private string thirdText;
     [SerializeField] public int textCount;
+    [SerializeField] protected string imageText;
 
     [HideInInspector] public string text;
     [HideInInspector] public int count;

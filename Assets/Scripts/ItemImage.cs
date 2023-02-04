@@ -1,6 +1,8 @@
 using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Unity.VisualScripting;
 
 public class ItemImage : ItemText
 {
@@ -8,6 +10,12 @@ public class ItemImage : ItemText
     public RawImage image;
     public RawImage screenOverlay;
     public Texture screenOverlayTexture;
+    public TMP_Text textbox;
+
+    public void Start()
+    {
+        textbox.text = imageText;
+    }
 
     public void HandleUI()
     {
@@ -19,6 +27,7 @@ public class ItemImage : ItemText
         {
             screenOverlay.texture = image.texture;
             GameManager.Instance.imageOverlayOn = true;
+            textbox.gameObject.SetActive(true);
         }
     }
 
@@ -26,5 +35,6 @@ public class ItemImage : ItemText
     {
         screenOverlay.texture = screenOverlayTexture;
         GameManager.Instance.imageOverlayOn = false;
+        textbox.gameObject.SetActive(false);
     }
 }
