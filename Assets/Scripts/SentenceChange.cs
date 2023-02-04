@@ -14,6 +14,7 @@ public class SentenceChange : MonoBehaviour
     public Image image;
     public int SceneID;
     public int max;
+    public Image image2;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,14 +36,22 @@ public class SentenceChange : MonoBehaviour
         {
             text.text = ScentenceList[listIndex].ToString();
             listIndex++;
+            imageChange();
         }
     }
 
     void imageChange()
     {
-        if(SceneID==1)
+        if (SceneID == 1)
         {
-
+            if(listIndex==1)
+            {
+                image2.enabled = true;
+            }
+            if (listIndex == 4)
+            {
+                image.sprite = sprites[1];
+            }
         }
     }
 
