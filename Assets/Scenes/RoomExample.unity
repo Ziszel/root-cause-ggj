@@ -1245,6 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rb: {fileID: 1997445607}
+  distanceToItem: 3
 --- !u!1 &2053231062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1353,7 @@ GameObject:
   - component: {fileID: 2125719473}
   m_Layer: 0
   m_Name: DeadBody
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,3 +1467,5 @@ MonoBehaviour:
   secondText: Looks like they were hit with a blunt instrument
   thirdText: 
   textCount: 1
+  text: 
+  count: 0

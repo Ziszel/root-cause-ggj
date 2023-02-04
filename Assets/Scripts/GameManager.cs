@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -45,8 +44,6 @@ public class GameManager : MonoBehaviour
         {
             textBox.text = "";
         }
-        
-
     }
 
     public void PresentText(string text, Transform itemTransform)
