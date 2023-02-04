@@ -19,7 +19,7 @@ public class MainMenuSceneManager : MonoBehaviour
         else
         {
             quitGameBtn.onClick.AddListener(QuitGame);
-            quitGameBtn.onClick.AddListener(QuitGame);  
+            quitGameBtn.onClick.AddListener(QuitGame);
         }
 
     }
@@ -28,7 +28,7 @@ public class MainMenuSceneManager : MonoBehaviour
     private bool DetectPlatform()
     {
         if (Application.platform == RuntimePlatform.WebGLPlayer)
-        //if (Application.platform == RuntimePlatform.OSXEditor) testing
+            //if (Application.platform == RuntimePlatform.OSXEditor) testing
         {
             return true;
         }
@@ -46,3 +46,5 @@ public class MainMenuSceneManager : MonoBehaviour
         Application.Quit(); // in standalone build
         UnityEditor.EditorApplication.isPlaying = false; // in the editor
     }
+
+}

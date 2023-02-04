@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -14,6 +12,7 @@ public class GameManager : MonoBehaviour
     private Vector2 _textOffset;
     private readonly float _offsetAmount = 2.0f;
     private float textDisplayTimer;
+    public bool imageOverlayOn;
 
     public void Awake()
     {
@@ -28,6 +27,7 @@ public class GameManager : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         _textOffset = new Vector2(_offsetAmount, 1.0f);
         textDisplayTimer = TEXT_TIMER;
+        imageOverlayOn = false;
     }
 
     public void Update()
@@ -54,6 +54,11 @@ public class GameManager : MonoBehaviour
         _currentText = text;
         textBox.text = _currentText;
         Debug.Log(text);
+    }
+
+    public void ImageOnScreen(ItemImage item)
+    {
+        item.HandleUI();
     }
 
     private void SetOffset(Transform itemTransform)
