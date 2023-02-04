@@ -23,7 +23,6 @@ public class MainMenuSceneManager : MonoBehaviour
 
     }
 
-    
 
     private bool DetectPlatform()
     {
