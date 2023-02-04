@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private const float TEXT_TIMER = 2.0f;
-    
+
     public TMP_Text textBox;
     public static GameManager Instance;
     private static string _currentText;
@@ -22,11 +23,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
         DontDestroyOnLoad(gameObject); // don't destroy the empty game object when loading a new scene
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        _textOffset = new Vector2(_offsetAmount,  1.0f);
+        _textOffset = new Vector2(_offsetAmount, 1.0f);
         textDisplayTimer = TEXT_TIMER;
     }
 
@@ -45,8 +45,6 @@ public class GameManager : MonoBehaviour
         {
             textBox.text = "";
         }
-        
-
     }
 
     public void PresentText(string text, Transform itemTransform)
@@ -73,5 +71,30 @@ public class GameManager : MonoBehaviour
     private void ResetTimer()
     {
         textDisplayTimer = TEXT_TIMER;
+    }
+
+    //Di wrote the code below
+    //Change to the endScene
+    private int bookCurrentPage = 0;
+    public int AddBookPage(int page)
+    {
+        bookCurrentPage += page;
+        return bookCurrentPage;
+    }
+    public int GetBookPage()
+    {
+        return bookCurrentPage;
+    }
+    public bool[] canOpenDoorArray = new bool[3];
+    public bool door(int id)
+    {
+        if (canOpenDoorArray[id])
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
