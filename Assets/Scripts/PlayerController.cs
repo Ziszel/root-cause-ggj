@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour
     {
         _items = new List<ItemText>();
         _itemsObjects = GameObject.FindGameObjectsWithTag("Item");
-        
         for (int i = 0; i < _itemsObjects.Length; ++i)
         {
             _items.Add(_itemsObjects[i].GetComponent<ItemText>());
@@ -32,7 +31,6 @@ public class PlayerController : MonoBehaviour
     {
         _movement.x = Input.GetAxisRaw("Horizontal");
         _movement.y = Input.GetAxisRaw("Vertical");
-        
         // if player presses A
         // if within a distance less than tolerance -> return THAT item
         // call the method inside of GameManager, passing in that item
@@ -74,4 +72,3 @@ public class PlayerController : MonoBehaviour
     {
         return Vector2.Distance(this.transform.position, item.transform.position);
     }
-}

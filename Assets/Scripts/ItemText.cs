@@ -37,7 +37,6 @@ public class ItemText : MonoBehaviour
         {
             UpdateText(count);
             count++;
-        }  
     }
 
     // void OnTriggerStay2D(Collider2D collisionInfo)
@@ -51,4 +50,3 @@ public class ItemText : MonoBehaviour
     //         }
     //     }
     // }
-}

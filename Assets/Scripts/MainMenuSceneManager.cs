@@ -18,6 +18,7 @@ public class MainMenuSceneManager : MonoBehaviour
         }
         else
         {
+            quitGameBtn.onClick.AddListener(QuitGame);
             quitGameBtn.onClick.AddListener(QuitGame);  
         }
 
@@ -45,4 +46,3 @@ public class MainMenuSceneManager : MonoBehaviour
         Application.Quit(); // in standalone build
         UnityEditor.EditorApplication.isPlaying = false; // in the editor
     }
-}
