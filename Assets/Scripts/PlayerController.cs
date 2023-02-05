@@ -19,10 +19,8 @@ public class PlayerController : MonoBehaviour
         _itemsObjects = GameObject.FindGameObjectsWithTag("Item");
         for (int i = 0; i < _itemsObjects.Length; ++i)
         {
-            //_items.Add(_itemsObjects[i].GetComponent<ItemText>());
             _items.Add(_itemsObjects[i].GetComponent<ItemImage>());
         }
-        Debug.Log(_items.Count);
     }
 
     // Update is called once per frame
@@ -39,8 +37,6 @@ public class PlayerController : MonoBehaviour
             if (closestItem) // might need a null check here
             {
                 GameManager.Instance.ImageOnScreen(closestItem);
-                //GameManager.Instance.PresentText(closestItem.text, closestItem.transform);
-                //closestItem.CheckForTextUpdate();
             }
         }
     }

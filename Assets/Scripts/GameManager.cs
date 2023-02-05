@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(_player);
         textBox.transform.position = new Vector3(_player.transform.position.x + _textOffset.x,
             _player.transform.position.y + _textOffset.y,
             _player.transform.position.z);
