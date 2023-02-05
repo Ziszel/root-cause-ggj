@@ -5,19 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f28e563faa05f4a07a83096668cc24b7
   - enabled: 1
-    path: Assets/Scenes/RoomExample.unity
-    guid: 27e3197f1c2b87c53878258d874d1e9b
+    path: Assets/Scenes/1206-1.unity
+    guid: 5f679d486ac4fa04ea93dd8f25c349b3
+  - enabled: 1
+    path: Assets/Scenes/1206-2.unity
+    guid: 944a5c580a7ac4f41ba77f89a17608e2
+  - enabled: 1
+    path: Assets/Scenes/1209.unity
+    guid: e9189ceba15bc474e9ba6316a31b92cd
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: b23bfe217e833e34ca0463e8851424b3
+  - enabled: 1
+    path: Assets/Scenes/Conversation.unity
+    guid: c007131947ec5b041a2aa6f952ae08c8
+  - enabled: 1
+    path: Assets/Scenes/Corridor.unity
+    guid: c4d7dcaa18234104ca4f27de1554f2d5
   - enabled: 1
     path: Assets/Scenes/HappyEnding.unity
     guid: 149704fbac0363a4d8336954474db827
   - enabled: 1
-    path: Assets/Scenes/BadEnding.unity
-    guid: b23bfe217e833e34ca0463e8851424b3
+    path: Assets/Scenes/Review.unity
+    guid: 0e5a4c2a84ee5c649a77bd53c93bae1d
+  - enabled: 1
+    path: Assets/Scenes/MeetingRoom.unity
+    guid: 1417253cf1a5cd949b4e97400c3d44f8
+  - enabled: 1
+    path: Assets/Scenes/MurdererIdentification.unity
+    guid: 07224d1b18114da4a98f83722a0ec026
+  - enabled: 1
+    path: Assets/Scenes/Plot.unity
+    guid: 9f4f505c83744084a8ea5badf875345b
+  - enabled: 1
+    path: Assets/Scenes/PolicemanClue.unity
+    guid: c0c53ecf69ad4d540b10d2aa4f2b0a8d
   m_configObjects: {}

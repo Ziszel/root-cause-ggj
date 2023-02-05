@@ -12,7 +12,7 @@ public class ChooseKiller : MonoBehaviour
     public TMP_Text _Text3;
     public List<Button> buttons = new List<Button>();
     public List<Button> buttons2 = new List<Button>();
-    private float Timer = 1f;
+    private float Timer = 2.5f;
     private bool isWin = false;
     private bool isReduce = false;
     public GameObject Q1;
@@ -67,7 +67,7 @@ public class ChooseKiller : MonoBehaviour
 
     IEnumerator ChangeScene1()
     {
-        _Text.text = "A defended a defendant in a murder case some years ago";
+        _Text.text = "Donald defended a defendant in a murder case some years ago";
         yield return new WaitForSeconds(Timer);
         _Text.text = "and got him acquitted. The victim in that case was my wife.";
         yield return new WaitForSeconds(Timer);
@@ -87,7 +87,7 @@ public class ChooseKiller : MonoBehaviour
         yield return new WaitForSeconds(Timer);
         _Text.text = "So I gave him a knife and tried to kill him, not realizing";
         yield return new WaitForSeconds(Timer);
-        _Text.text = "that I had not poked A in the vitals according to forensics";
+        _Text.text = "that I had not poked Donald in the vitals according to forensics";
         yield return new WaitForSeconds(Timer);
         //change to the SadEnding
         //SceneManager.LoadScene("SadEnding");
@@ -103,7 +103,7 @@ public class ChooseKiller : MonoBehaviour
         yield return new WaitForSeconds(Timer);
         _Text.text = "So I poisoned him and tried to kill him slowly,";
         yield return new WaitForSeconds(Timer);
-        _Text.text = "but I didn't expect the dose to be enough to kill A";
+        _Text.text = "but I didn't expect the dose to be enough to kill Donald";
         yield return new WaitForSeconds(Timer);
         //SceneManager.LoadScene("SadEnding");
         StartCoroutine("ChangeScene3");
@@ -129,7 +129,7 @@ public class ChooseKiller : MonoBehaviour
     }
     IEnumerator ChangeScene5()
     {
-        _Text2.text = "I killed Philips, so I found a group of Donald, Walter, and Brix to help me cover it up";
+        _Text2.text = "I killed Philips, so I found a group: Donald, Walter, and Brix to help me cover it up";
         yield return new WaitForSeconds(Timer);
         Q2.SetActive(false);
         Q3.SetActive(true);
@@ -140,7 +140,7 @@ public class ChooseKiller : MonoBehaviour
         else if (isWin && isReduce)
         {
             _Text3.text = "You proved that you didn't kill this man, and you helped the police solve another murder, " +
-                "which you did a great deal of credit for, and you got three years off a five-year sentence.";
+                "which went a long way in the courtroom, and you got three years off a five-year sentence.";
             yield return new WaitForSeconds(5);
             SceneManager.LoadScene("HappyEnding");
         }

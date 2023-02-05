@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text textBox;
     public static GameManager Instance;
+    public AudioSource song;
     private static string _currentText;
     private PlayerController _player;
     private Vector2 _textOffset;
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject); // don't destroy the empty game object when loading a new scene
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        //_player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         _textOffset = new Vector2(_offsetAmount, 1.0f);
         textDisplayTimer = TEXT_TIMER;
         imageOverlayOn = false;
@@ -32,19 +34,9 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(_player);
-        textBox.transform.position = new Vector3(_player.transform.position.x + _textOffset.x,
-            _player.transform.position.y + _textOffset.y,
-            _player.transform.position.z);
-
-        if (textBox.text != "")
+        if (SceneManager.GetActiveScene().name =="HappyEnding")
         {
-            textDisplayTimer -= Time.deltaTime;
-        }
-
-        if (textDisplayTimer < 0)
-        {
-            textBox.text = "";
+            song.Stop();
         }
     }
 

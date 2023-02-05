@@ -37,21 +37,21 @@ public class Door : MonoBehaviour
         switch(doorNumber)
         {
             case 0:
-                //SceneManager.LoadScene("");
+                SceneManager.LoadScene("1209");
                 btn2.interactable = true;
                 GameManager.Instance.canOpenDoorArray[1] = true;
                 btn1.image.sprite = sprites[1];
                 StartCoroutine("ClickEffect");
                 break;
             case 1:
-                //SceneManager.LoadScene("");
+                SceneManager.LoadScene("1206-1");
                 btn3.interactable = true;
                 GameManager.Instance.canOpenDoorArray[2] = true;
                 btn2.image.sprite = sprites[3];
                 StartCoroutine("ClickEffect2");
                 break;
             case 2:
-                //SceneManager.LoadScene("");
+                SceneManager.LoadScene("MeetingRoom");
                 btn3.image.color = new Color(255, 255, 255, 255);
                 StartCoroutine("ClickEffect3");
                 break;

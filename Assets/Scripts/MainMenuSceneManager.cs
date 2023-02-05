@@ -39,13 +39,12 @@ public class MainMenuSceneManager : MonoBehaviour
 
     private void StartGame()
     {
-        SceneManager.LoadScene("RoomExample");
+        SceneManager.LoadScene("Plot");
     }
 
     private void QuitGame()
     {
-        Application.Quit(); // in standalone build
-        UnityEditor.EditorApplication.isPlaying = false; // in the editor
+        
     }
 }
 

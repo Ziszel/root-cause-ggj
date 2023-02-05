@@ -6,6 +6,16 @@ TagManager:
   tags:
   - Door
   - Item
+  - knives
+  - redwine
+  - room1blood
+  - lamp
+  - plant
+  - Body
+  - Mobile
+  - Rubbish
+  - Drag
+  - Mobile2
   layers:
   - Default
   - TransparentFX
@@ -17,7 +27,7 @@ TagManager:
   - floor
   - wall
   - Door
-  - 
+  - Item
   - 
   - 
   - 

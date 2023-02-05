@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SentenceChange : MonoBehaviour
@@ -28,6 +29,14 @@ public class SentenceChange : MonoBehaviour
         {
             flip();
         }
+        else
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneChange();
+            }
+
+        }
     }
 
     void flip()
@@ -51,7 +60,60 @@ public class SentenceChange : MonoBehaviour
             if (listIndex == 4)
             {
                 image.sprite = sprites[1];
+                text.fontStyle = FontStyles.Italic;
             }
+        }
+        else if(SceneID==6)
+        {
+            if(listIndex==3)
+            {
+                image.sprite = sprites[1];
+            }
+            if(listIndex==4)
+            {
+                image.sprite = sprites[0];
+            }
+        }
+        else if(SceneID==8)
+        {
+
+        }
+        else if(SceneID==9)
+        {
+            if(listIndex==2)
+            {
+                image.sprite = sprites[1];
+            }
+            else if(listIndex==3)
+            {
+                image.sprite = sprites[0];
+                text.fontStyle = FontStyles.Italic;
+            }
+            else if (listIndex == 5)
+            {
+                image.sprite = sprites[1];
+                text.fontStyle = FontStyles.Bold;
+            }
+        }
+    }
+
+    void SceneChange()
+    {
+        if(SceneID==1)
+        {
+            SceneManager.LoadScene("Corridor");
+        }
+        else if(SceneID==9)
+        {
+            SceneManager.LoadScene("Corridor");
+        }
+        else if(SceneID==6)
+        {
+            SceneManager.LoadScene("Corridor");
+        }
+        else if(SceneID==8)
+        {
+            SceneManager.LoadScene("MurdererIdentification");
         }
     }
 

@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
             //_items.Add(_itemsObjects[i].GetComponent<ItemText>());
             _items.Add(_itemsObjects[i].GetComponent<ItemImage>());
         }
-        Debug.Log(_items.Count);
+        //Debug.Log(_items.Count);
     }
 
     // Update is called once per frame
