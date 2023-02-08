@@ -1,9 +1,17 @@
 # Root Cause
 
-Root Cause is a 2D investigation game that pits the player into the hands of former ace-detective, turned drunkard, 'Inspector'.
+The Root Cause is an investigation game that asks the player? Who is the real killer? What really happened at this hotel?
 
-Inspector awakes, hungover, to find themselves in the house of a now dead drug baron. With little to go on for clues, and no memory of last nights events. Inspector has only their wit to work out what transpired here. Reinforcements will soon arrive on the scene and they will want answers.
+Created over the course of 48 hours for the Global Game Jam 2023, this project was lost in the final hours. We have now recovered it.
 
 ## Team
 
+- Calin Clement O'Ceallaigh
+- Di Ge
+- Xinran Cheng
+- Xianyi
+- Yuju Wang
+
 ## Where you can play
+
+https://ziszle.itch.io/the-root-cause
